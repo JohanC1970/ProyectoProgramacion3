@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="1.0" layoutY="1.0" prefHeight="55.0" prefWidth="621.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="269.0" layoutY="11.0" text="Bienvenido" textFill="#e1e1e1">
+               <font>
+                  <Font name="SP Time Figurines Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="108.0" fitWidth="132.0" layoutX="48.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../multimedia/black%20logo.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="217.0" layoutY="8.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="6.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="387.0" prefHeight="61.0" prefWidth="627.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button layoutX="148.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #5894b1;" text="Crea una cuenta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="383.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #5894b1;" text="Inicia sesión" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="ventana_ver_anuncios" layoutX="1.0" layoutY="63.0" prefHeight="333.0" prefWidth="621.0">
+         <children>
+            	<fx:include source="VentanaVerAnuncios.fxml" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
